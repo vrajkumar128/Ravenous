@@ -22,11 +22,7 @@ export class SearchBar extends React.Component {
   }
 
   getSortByClass(sortByOption) {
-    if (this.state.sortBy === sortByOption) {
-      return 'active';
-    } else {
-      return '';
-    }
+    return (this.state.sortBy === sortByOption) ? 'active' : '';
   }
 
   handleSortByChange(sortByOption) {
